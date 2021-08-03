@@ -1,9 +1,8 @@
 import React from 'react';
 import {Button, Image, Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import chewy from '../assets/chewy.png';
 
-const Card = () => {
+const Card = (props) => {
   return(
     <View style={styles.card}>
       <View style={styles.name}>
@@ -14,11 +13,11 @@ const Card = () => {
           color: '#FFA92C',
           lineHeight:40}}
         >
-          Uncle Toby's Chewy Apricot
+          {props.title}
         </Text>
       </View>
       <Image
-        source={{uri:'chewy'}}
+        source={props.image}
         style={styles.picture}
       />
     </View>

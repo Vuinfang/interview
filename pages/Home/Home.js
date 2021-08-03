@@ -1,7 +1,11 @@
 import React from 'react';
-import {Button, Text, View} from 'react-native';
+import {Button, Image, Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import Card from '../component/Card';
+import Card from '../../component/Card';
+import chewy from '../../assets/chewy.png';
+import CatEmoji from '../../assets/cat_emoji.svg';
+import Filter from '../../assets/Filter Icon.svg'
+import styles from './styles';
 const Home = ({ navigation}) => {
     return (
       <View style={{ flex: 1 }}>
@@ -16,7 +20,8 @@ const Home = ({ navigation}) => {
                 }}>
                   Good Afternoon
                 </Text>
-                <Text style={{fontSize:'20px',
+                <Text style={{
+                  fontSize:'20px',
                   color: '#fff',
                   fontStyle: 'Montserrat',
                   fontWeight: '350'
@@ -25,70 +30,38 @@ const Home = ({ navigation}) => {
                 </Text>
               </View>
               <View style={styles.mood}>
-                <Text style={styles.picker}>MJ</Text>
+                <CatEmoji width={20} height={'100%'}/>
+                <Text style={styles.picker}>SJ</Text>
+                <Text>    V</Text>
               </View>
             </View>
-
           </View>
         <View style={styles.userItem}>
           <View>
-            <Text style={{fontSize:16,
+            <Text style={{
+              fontSize:16,
               color: 'black',
               fontStyle: 'Montserrat',
-              fontWeight:'600'
+              fontWeight:'400'
             }}>
               Samantha's Items
               <Text style={{
-                fontSize: 16,
                 color: '#FFA92C'
               }}> 1</Text>
             </Text>
 
           </View>
-          <View>Icon</View>
+          <Filter/>
         </View>
         <View>
-          <Card/>
+          <Card
+            // image={'../assets/chewy.png'}
+            image={chewy}
+            title={'Uncle Toby\'s Chewy Apricot'}
+          />
         </View>
-
-
       </View>
     );
 }
-const styles = StyleSheet.create({
-  // -------------header...---------------
-    top: {
-      width: '100%',
-      height: 142,
-      backgroundColor: '#FFA92C',
-      color: '#fff'
-    },
-  item: {
-    flexDirection: 'row',
-    marginTop: 67.38,
-  },
-  username: {
-      width: 204,
-      height: 48,
-      marginLeft: 19.5,
-  },
-  mood: {
-      width: 150.5,
-  },
-  picker: {
-      marginTop: 9,
-      width: 99,
-      height: 34,
-      borderRadius: '10px',
-      backgroundColor: '#fff'
-  },
-  // ------------------body...------------------
-  userItem: {
-    flexDirection: 'row',
-    justifyContent:'space-between',
-    marginTop: 25,
-    marginLeft: 19.5,
-    marginRight: 19.5,
-  }
-})
+
 export default Home;

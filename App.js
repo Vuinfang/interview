@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Product from './pages/Product';
 import Flag from './pages/Flag';
 
