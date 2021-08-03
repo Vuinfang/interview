@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   userItem: {
     flexDirection: 'row',
     justifyContent:'space-between',
-    marginTop: 25,
+    marginTop: 20,
     marginLeft: 19.5,
     marginRight: 19.5,
   }
