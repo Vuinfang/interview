@@ -30,11 +30,15 @@ const styles = StyleSheet.create({
   },
   picker: {
     height:'100%',
-    paddingLeft: 10,
+    paddingLeft: 11,
     fontFamily: 'Montserrat',
     fontSize: 18,
     color: '#FFA92C'
 
+  },
+  arrow: {
+    paddingLeft:11,
+    paddingTop: 7,
   },
 
   // ------------------body...------------------

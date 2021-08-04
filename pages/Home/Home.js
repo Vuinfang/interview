@@ -1,11 +1,12 @@
 import React from 'react';
-import {Button, Image, Text, View} from 'react-native';
+import {Button, Image, Text, TouchableOpacity, View} from 'react-native';
 import {StyleSheet} from 'react-native';
 import Card from '../../component/Card';
 import chewy from '../../assets/chewy.png';
 import CatEmoji from '../../assets/cat_emoji.svg';
 import Filter from '../../assets/Filter Icon.svg'
 import styles from './styles';
+import DownArrow from '../../assets/Down Arrow.svg';
 const Home = ({ navigation}) => {
     return (
       <View style={{ flex: 1 }}>
@@ -32,7 +33,9 @@ const Home = ({ navigation}) => {
               <View style={styles.mood}>
                 <CatEmoji width={20} height={'100%'}/>
                 <Text style={styles.picker}>SJ</Text>
-                <Text>    V</Text>
+                <View style={styles.arrow}>
+                  <DownArrow/>
+                </View>
               </View>
             </View>
           </View>
@@ -53,13 +56,13 @@ const Home = ({ navigation}) => {
           </View>
           <Filter/>
         </View>
-        <View>
+        <TouchableOpacity onPress={() => navigation.navigate('Product')}>
           <Card
             // image={'../assets/chewy.png'}
             image={chewy}
             title={'Uncle Toby\'s Chewy Apricot'}
           />
-        </View>
+        </TouchableOpacity>
       </View>
     );
 }

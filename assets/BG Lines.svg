@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="515.881" height="515.88" viewBox="0 0 515.881 515.88">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.014" y1="0.817" x2="0.8" y2="1.059" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.088" y1="1.106" x2="0.779" y2="0.837" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0" y1="1.501" x2="0.786" y2="0.452" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0.069" y1="1.024" x2="0.936" y2="0.755" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group" transform="translate(-40 123)" opacity="0.1">
+    <path id="Vector" d="M568.345,0H0V23.025H568.345Z" transform="translate(88.836 -57.835) rotate(45)" fill="url(#linear-gradient)"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H568.345V23.025H0Z" transform="translate(154.001 -123) rotate(45)" fill="url(#linear-gradient-2)"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H568.345V23.025H0Z" transform="translate(121.438 -90.438) rotate(45)" fill="url(#linear-gradient-3)"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H568.345V23.025H0Z" transform="translate(56.281 -25.281) rotate(45)" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>
