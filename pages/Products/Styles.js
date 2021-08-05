@@ -157,23 +157,27 @@ const Styles = StyleSheet.create({
     flexDirection: 'row',
   },
   userBoxOne: {
+    alignItems: 'center',
     width: 51,
     height: 51,
     borderRadius: 5,
     backgroundColor: '#FEE239'
   },
   userBoxTwo: {
+    alignItems: 'center',
     width: 51,
     height: 51,
     borderRadius: 5,
     backgroundColor: '#FFA92C'
   },
   moodStyle: {
-    paddingLeft: 14,
+    // paddingLeft: 16,
     paddingTop: 7,
   },
   shortName: {
-    paddingLeft: 17,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    // paddingLeft: 17,
     paddingTop: 3,
     color: '#fff'
   },
