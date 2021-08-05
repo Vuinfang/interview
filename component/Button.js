@@ -16,8 +16,8 @@ const Button = (props) => {
   )}
 const Styles = StyleSheet.create({
   button: {
+    margin: 'auto',
     marginTop:20,
-    marginLeft:19,
     width:336,
     height:45,
     flexDirection: 'column',

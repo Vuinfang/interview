@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Svg, { Circle, G, Rect, Path } from 'react-native-svg';
-export default function Test(props) {
+export default function FilterNew(props) {
   return (
     <Svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
       <G id="Group_7" data-name="Group 7" transform="translate(-325.001 -307)">
@@ -20,10 +20,6 @@ export default function Test(props) {
         </G>
       </G>
     </Svg>
-//     <Svg height="50%" width="50%" viewBox="0 0 100 100" {...props}>
-//       <Circle cx="50" cy="50" r="45" stroke="blue" strokeWidth="2.5" fill="green" />
-//       <Rect x="15" y="15" width="70" height="70" stroke="red" strokeWidth="2" fill="yellow" />
-//     </Svg>
   );
 }
 

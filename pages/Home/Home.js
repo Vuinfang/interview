@@ -2,11 +2,11 @@ import React from 'react';
 import {Button, Image, Text, TouchableOpacity, View} from 'react-native';
 import Card from '../../component/Card';
 import chewy from '../../assets/chewy.png';
-// import CatEmoji from '../../assets/cat_emoji.svg';
-// import Filter from '../../assets/Filter Icon.svg'
 import Styles from './Styles';
-// import DownArrow from '../../assets/Down Arrow.svg';
-import Test from '../../test/Test';
+import Cat from '../../svg/Cat';
+import Down from '../../svg/Down';
+import FilterNew from '../../svg/FilterNew';
+
 const Home = ({ navigation}) => {
     return (
       <View style={{ flex: 1 }}>
@@ -32,11 +32,11 @@ const Home = ({ navigation}) => {
               </View>
               <View style={Styles.mood}>
                 {/*<CatEmoji width={20} height={'100%'}/>*/}
-                <Test width={20} height={'100%'}/>
+                <Cat width={20} height={'100%'}/>
                 <Text style={Styles.picker}>SJ</Text>
                 <View style={Styles.arrow}>
-                  {/*<DownArrow/>*/}
-                  <Test/>
+                  <Down/>
+                  {/*<FilterNew/>*/}
                 </View>
               </View>
             </View>
@@ -57,7 +57,7 @@ const Home = ({ navigation}) => {
 
           </View>
           {/*<Filter/>*/}
-          <Test/>
+          <FilterNew/>
         </View>
         <TouchableOpacity onPress={() => navigation.navigate('Product')}>
           <Card

@@ -1,11 +1,18 @@
 import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
+  box: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#FFA92C',
+    alignItems: 'center',
+    height:'100%',
+    width: '100%'
+  },
   header: {
     width:336,
     height:40,
     flexDirection:'row',
-    marginLeft: 19,
     marginTop:64,
   },
   backButton: {
@@ -24,13 +31,13 @@ const Styles = StyleSheet.create({
   boxOne: {
     width:336,
     height:54,
-    marginLeft: 19,
+    // marginLeft: 19,
     marginTop:40,
   },
   boxTwo: {
     width:336,
     height:40,
-    marginLeft: 19,
+    // marginLeft: 19,
     marginTop:56,
   },
   hLine: {
@@ -41,7 +48,7 @@ const Styles = StyleSheet.create({
   boxThree: {
     width:336,
     height:170,
-    marginLeft: 19,
+    // marginLeft: 19,
     marginTop:47,
   },
   label: {
@@ -62,9 +69,18 @@ const Styles = StyleSheet.create({
     paddingLeft:11,
     paddingTop:4
   },
-  space: {
-    width: 375,
-    height: 180,
+  // space: {
+  //   width: 375,
+  //   height: 180,
+  // }
+  bottom: {
+    position: 'absolute',
+    margin:'auto',
+    bottom: 0,
+    alignItems: 'center',
+    width: '100%',
+    height: '10%',
+    backgroundColor: '#FFA92C',
   }
 })
 export default Styles;

@@ -7,7 +7,7 @@ const { width } = Dimensions.get('screen');
 const TabBar = ({ state, navigation }) => {
   const [selected, setSelected] = useState('Home');
   const { routes } = state;
-  const renderColor = currentTab => (currentTab === selected ? 'red' : 'black');
+  const renderColor = currentTab => (currentTab === selected ? '#FFA92C' : '#CDCDCD');
 
   const handlePress = (activeTab, index) => {
     if (state.index !== index) {
@@ -17,17 +17,20 @@ const TabBar = ({ state, navigation }) => {
   };
 
   return (
-    <View style={styles.wrapper}>
-      {routes.map((route, index) => (
-        <Tab
-          tab={route}
-          icon={route.params.icon}
-          onPress={() => handlePress(route.name, index)}
-          color={renderColor(route.name)}
-          key={route.key}
-        />
-      ))}
+    <View>
+      <View style={styles.wrapper}>
+        {routes.map((route, index) => (
+          <Tab
+            tab={route}
+            icon={route.params.icon}
+            onPress={() => handlePress(route.name, index)}
+            color={renderColor(route.name)}
+            key={route.key}
+          />
+        ))}
+      </View>
     </View>
+
   );
 };
 
@@ -35,10 +38,18 @@ const styles = StyleSheet.create({
   wrapper: {
     flexDirection: 'row',
     position: 'absolute',
-    bottom: 20,
+    backgroundColor: '#fff',
+    bottom: 0,
+    paddingBottom: 20,
     width,
+    height: 80,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
+    // justifyContent: 'center',
+    shadowOffset: {width: 0, height:-5},
+    shadowRadius: 12,
+    shadowOpacity: 1,
+    shadowColor: '#00000029',
   },
   container: {
     flexDirection: 'row',
@@ -47,6 +58,7 @@ const styles = StyleSheet.create({
     width: 250,
     borderRadius: 100,
     elevation: 2,
+
   },
 });
 

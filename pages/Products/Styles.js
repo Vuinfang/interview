@@ -3,12 +3,17 @@ import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
   boxOne: {
-    width:375,
-    height:391,
+    margin: 'auto',
+    width: '100%',
+    height: '45%',
+    alignItems: 'center',
   },
+
   image: {
-    width: 375,
-    height: 361,
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    // justifyContent: 'column',
   },
   iconBox: {
     width: 40,
@@ -26,26 +31,41 @@ const Styles = StyleSheet.create({
 
   },
   iconOne: {
+    margin: 'auto',
     marginTop:64,
-    marginLeft:19,
-    marginRight:19,
-    width:336,
+    marginBottom: 2,
+    width: '100%',
+    alignItems: 'center',
+    paddingLeft:19,
+    paddingRight:19,
+    // width:336,
     height:40,
     flexDirection: 'row',
     justifyContent:'space-between',
   },
   iconTwo: {
-    marginLeft: 19,
-    marginRight: 19,
-    marginTop: 8,
-    width: 336,
+    margin: 'auto',
+    marginTop: 2,
+    paddingTop: 7,
+    paddingLeft:19,
+    paddingRight:19,
+    width: '100%',
     height: 40,
     flexDirection: 'row-reverse',
   },
+//------------- Box two ---------------
+  boxTwo: {
+    margin: 'auto',
+    justifyContent: 'space-around',
+    width: '100%',
+    height: '55%',
+    alignItems: 'center',
+    paddingBottom: 50,
+  },
   category: {
-    width: 375,
-    height: 60,
-    marginTop: 190,
+    width: '100%',
+    height: 55,
+    marginTop: -30,
     flexDirection: 'row',
     justifyContent:'space-between',
     backgroundColor: '#fff',
@@ -87,10 +107,10 @@ const Styles = StyleSheet.create({
     color: '#FFF'
   },
   name: {
-    marginLeft: 19,
+    margin: 'auto',
+    marginTop: -10,
     width: 336,
-    height: 52,
-
+    height: 40,
   },
   brand: {
     fontSize: 20,
@@ -100,7 +120,8 @@ const Styles = StyleSheet.create({
     fontWeight: '500',
   },
   detail: {
-    marginLeft:19,
+    margin: 'auto',
+    marginTop: -35,
     width: 336,
     height: 45,
     flexDirection: 'row',
@@ -117,9 +138,11 @@ const Styles = StyleSheet.create({
     paddingTop: 15,
   },
   user: {
-    marginLeft: 19,
+    margin: 'auto',
+    marginTop: -35,
     width: 336,
-    height: 25,
+    height: 76,
+    // height: 25,
   },
   username: {
     fontSize: 14,
@@ -127,8 +150,9 @@ const Styles = StyleSheet.create({
     lineHeight: 25,
   },
   userDetail: {
-    marginLeft: 19,
-    marginRight: 19,
+    margin: 'auto',
+    // marginLeft: 19,
+    // marginRight: 19,
     width: 336,
     height: 51,
     flexDirection: 'row',
@@ -175,9 +199,12 @@ const Styles = StyleSheet.create({
     marginBottom: 20,
   },
   bottom: {
-    marginTop: 10,
-    width: 375,
-    height: 123,
+    position: 'absolute',
+    margin:'auto',
+    bottom: 0,
+    alignItems: 'center',
+    width: '100%',
+    height: '10%',
     borderTopLeftRadius: 7,
     borderTopRightRadius: 7,
     backgroundColor: '#FFA92C',

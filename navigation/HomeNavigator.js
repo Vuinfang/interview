@@ -32,7 +32,7 @@ function HomeTabScreen() {
       //   },
       // })}
       // tabBarOptions={{
-      //   activeTintColor: 'tomato',
+      //   activeTintColor: '#FFA92C',
       //   inactiveTintColor: 'gray',
       // }}
       // tabBarOptions={{
@@ -55,8 +55,8 @@ function HomeTabScreen() {
       tabBar={(props) => <TabBar {...props}/>}
     >
       <Tab.Screen name="Home" component={Home} initialParams={{ icon: 'home' }}/>
-      <Tab.Screen name="Products" component={Home} initialParams={{ icon: 'home' }}/>
-      <Tab.Screen name="setting" component={Home} initialParams={{ icon: 'home' }}/>
+      <Tab.Screen name="Scan" component={Home} initialParams={{ icon: 'scan' }}/>
+      <Tab.Screen name="setting" component={Home} initialParams={{ icon: 'setting' }}/>
     </Tab.Navigator>
 
   );

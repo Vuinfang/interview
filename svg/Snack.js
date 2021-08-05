@@ -1,0 +1,15 @@
+import * as React from 'react';
+import Svg, { Circle, G, Rect, Path } from 'react-native-svg';
+export default function Snack(props) {
+  return (
+    <Svg id="Chocolate_bar" data-name="Chocolate bar" xmlns="http://www.w3.org/2000/svg" width="16" height="16.036" viewBox="0 0 16 16.036">
+      <G id="Frame">
+        <Path id="Vector" d="M11.52,14.663a1.779,1.779,0,0,1-2.514,0L.521,6.178c-.694-.694-.694-1.192,0-1.886L4.292.521c.694-.694,1.192-.694,1.886,0l8.485,8.485a1.778,1.778,0,0,1,0,2.514Z" transform="translate(0.186 0.224)" fill="#c1694f"/>
+        <Path id="Vector-2" data-name="Vector" d="M5.942,5.314,3.771,3.143,6.285.628,5.656,0,3.143,2.514,1.479.851.851,1.48,2.514,3.143,0,5.657l.628.628L3.143,3.771,5.314,5.942Z" transform="translate(1.428 1.465)" fill="#8a4b38"/>
+        <Path id="Vector-3" data-name="Vector" d="M6.914,10.685a1.778,1.778,0,0,1-2.514,0L0,6.285,6.285,0l4.4,4.4a1.778,1.778,0,0,1,0,2.514Z" transform="translate(4.792 4.831)" fill="#dd2e44"/>
+        <Path id="Vector-4" data-name="Vector" d="M0,7.608,2.077,9.685,5.612.649,5.378.414,4.709,0Z" transform="translate(5.7 4.416)" fill="#be1931"/>
+        <Path id="Vector-5" data-name="Vector" d="M7.142.279l.943.943c-.314.943-3.771,6.914-4.4,8.171,0,0-.314.943-1.1.157L.227,7.193a.982.982,0,0,1,0-1.257L5.885.279a.871.871,0,0,1,1.257,0Z" transform="translate(2.993 3.608)" fill="#ccd6dd"/>
+      </G>
+    </Svg>
+  );
+}

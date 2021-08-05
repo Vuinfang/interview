@@ -31,6 +31,7 @@ const Styles = StyleSheet.create({
   picker: {
     height:'100%',
     paddingLeft: 11,
+    lineHeight: 20,
     fontFamily: 'Montserrat',
     fontSize: 18,
     color: '#FFA92C'
