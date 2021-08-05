@@ -1,42 +1,42 @@
 import {StyleSheet} from 'react-native';
 
 
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   boxOne: {
     width:375,
     height:391,
   },
   image: {
-    width:375,
-    height:361,
+    width: 375,
+    height: 361,
   },
   iconBox: {
-    width:40,
-    height:40,
-    borderRadius:5,
-    backgroundColor:'#fff',
+    width: 40,
+    height: 40,
+    borderRadius: 5,
+    backgroundColor: '#fff',
   },
   iconBoxTwo: {
     paddingLeft: 11,
     paddingTop: 10,
-    width:40,
-    height:40,
+    width: 40,
+    height: 40,
     borderRadius:5,
     backgroundColor:'#fff',
 
   },
   iconOne: {
     marginTop:64,
-    marginLeft:19.5,
-    marginRight:19.5,
+    marginLeft:19,
+    marginRight:19,
     width:336,
     height:40,
     flexDirection: 'row',
     justifyContent:'space-between',
   },
   iconTwo: {
-    marginLeft: 19.5,
-    marginRight: 19.5,
+    marginLeft: 19,
+    marginRight: 19,
     marginTop: 8,
     width: 336,
     height: 40,
@@ -51,11 +51,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   smileEmj: {
-    width: 75,
-    height: 75,
+    width: 76,
+    height: 76,
     marginTop: -30,
     marginLeft:19,
-    borderRadius: '50%',
+    borderRadius: 38,
     backgroundColor: '#fff',
   },
   smileIcon: {
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     color: '#FFF'
   },
   name: {
-    marginLeft: 19.5,
+    marginLeft: 19,
     width: 336,
     height: 52,
 
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   detail: {
-    marginLeft:19.5,
+    marginLeft:19,
     width: 336,
     height: 45,
     flexDirection: 'row',
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     paddingTop: 15,
   },
   user: {
-    marginLeft: 19.5,
+    marginLeft: 19,
     width: 336,
     height: 25,
   },
@@ -127,8 +127,8 @@ const styles = StyleSheet.create({
     lineHeight: 25,
   },
   userDetail: {
-    marginLeft: 19.5,
-    marginRight: 19.5,
+    marginLeft: 19,
+    marginRight: 19,
     width: 336,
     height: 51,
     flexDirection: 'row',
@@ -146,8 +146,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFA92C'
   },
   moodStyle: {
-    paddingLeft: 14.5,
-    paddingTop: 7.5,
+    paddingLeft: 14,
+    paddingTop: 7,
   },
   shortName: {
     paddingLeft: 17,
@@ -156,8 +156,8 @@ const styles = StyleSheet.create({
 
   },
   detailRowOne: {
-    marginRight: 19.5,
-    width: 304.5,
+    marginRight: 19,
+    width: 304,
     height: 25,
     flexDirection: 'row',
     // backgroundColor: '#ccc'
@@ -183,4 +183,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFA92C',
   }
 })
-export default styles;
+export default Styles;

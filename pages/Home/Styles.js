@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   // -------------header---------------
   top: {
     width: '100%',
@@ -10,12 +10,12 @@ const styles = StyleSheet.create({
   },
   item: {
     flexDirection: 'row',
-    marginTop: 67.38,
+    marginTop: 67,
   },
   username: {
     width: 204,
     height: 48,
-    marginLeft: 19.5,
+    marginLeft: 19,
   },
   mood: {
     flexDirection: 'row',
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     paddingLeft: 13,
     paddingTop: 9,
     paddingBottom: 7,
-    borderRadius: '10px',
+    borderRadius: 10,
     backgroundColor: '#fff'
   },
   picker: {
@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent:'space-between',
     marginTop: 20,
-    marginLeft: 19.5,
-    marginRight: 19.5,
+    marginLeft: 19,
+    marginRight: 19,
   }
 })
-export default styles;
+export default Styles;

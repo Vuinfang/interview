@@ -5,19 +5,19 @@ import {StyleSheet} from 'react-native';
 const Button = (props) => {
   return(
     <TouchableOpacity
-      style={styles.button}
+      style={Styles.button}
       onPress={props.onPress}
     ><View>
-      <Text style={styles.title}>
+      <Text style={Styles.title}>
         {props.title}
       </Text>
     </View>
     </TouchableOpacity>
   )}
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   button: {
     marginTop:20,
-    marginLeft:19.5,
+    marginLeft:19,
     width:336,
     height:45,
     flexDirection: 'column',
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     shadowRadius: 12,
     shadowOpacity: 1,
     shadowColor: '#00000029',
-    shadowBlur: 15,
+    // shadowBlur: 15,
   },
   title: {
     fontSize:16,

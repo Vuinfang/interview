@@ -1,11 +1,11 @@
 import {StyleSheet} from 'react-native';
 
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   header: {
     width:336,
     height:40,
     flexDirection:'row',
-    marginLeft: 19.5,
+    marginLeft: 19,
     marginTop:64,
   },
   backButton: {
@@ -17,20 +17,20 @@ const styles = StyleSheet.create({
   title: {
     lineHeight:40,
     fontSize:20,
-    fontWeight:380,
+    fontWeight: '400',
     color:'#fff',
     paddingLeft:80,
   },
   boxOne: {
     width:336,
     height:54,
-    marginLeft: 19.5,
+    marginLeft: 19,
     marginTop:40,
   },
   boxTwo: {
     width:336,
     height:40,
-    marginLeft: 19.5,
+    marginLeft: 19,
     marginTop:56,
   },
   hLine: {
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   boxThree: {
     width:336,
     height:170,
-    marginLeft: 19.5,
+    marginLeft: 19,
     marginTop:47,
   },
   label: {
@@ -49,15 +49,15 @@ const styles = StyleSheet.create({
   },
   detail: {
     fontSize:14,
-    fontWeight:'500',
+    fontWeight: '500',
     color:'#fff',
     paddingLeft:11,
     paddingBottom:8,
     paddingTop:4
   },
   product: {
-    fontSize:16,
-    fontWeight:'500',
+    fontSize: 16,
+    fontWeight: '500',
     color:'#fff',
     paddingLeft:11,
     paddingTop:4
@@ -67,4 +67,4 @@ const styles = StyleSheet.create({
     height: 180,
   }
 })
-export default styles;
+export default Styles;

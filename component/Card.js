@@ -4,8 +4,8 @@ import {StyleSheet} from 'react-native';
 
 const Card = (props) => {
   return(
-    <View style={styles.card}>
-      <View style={styles.name}>
+    <View style={Styles.card}>
+      <View style={Styles.name}>
         <Text style={{
           whiteSpace:'nowrap',
           textOverflow:'ellipsis',
@@ -18,20 +18,20 @@ const Card = (props) => {
       </View>
       <Image
         source={props.image}
-        style={styles.picture}
+        style={Styles.picture}
       />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   card: {
     marginTop: 5,
-    marginLeft: 19.5,
+    marginLeft: 19,
     width: 155,
     height: 165,
     backgroundColor: '#0000001A',
-    borderRadius: '5px',
+    borderRadius: 5,
     overflow: 'hidden',
     shadowOffset: {width: 0, height:-5},
     shadowRadius: 4,
