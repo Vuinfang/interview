@@ -31,13 +31,11 @@ const Styles = StyleSheet.create({
   boxOne: {
     width:336,
     height:54,
-    // marginLeft: 19,
     marginTop:40,
   },
   boxTwo: {
     width:336,
     height:40,
-    // marginLeft: 19,
     marginTop:56,
   },
   hLine: {
@@ -48,7 +46,6 @@ const Styles = StyleSheet.create({
   boxThree: {
     width:336,
     height:170,
-    // marginLeft: 19,
     marginTop:47,
   },
   label: {
@@ -69,10 +66,6 @@ const Styles = StyleSheet.create({
     paddingLeft:11,
     paddingTop:4
   },
-  // space: {
-  //   width: 375,
-  //   height: 180,
-  // }
   bottom: {
     position: 'absolute',
     margin:'auto',

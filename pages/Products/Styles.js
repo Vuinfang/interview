@@ -1,6 +1,5 @@
 import {StyleSheet} from 'react-native';
 
-
 const Styles = StyleSheet.create({
   boxOne: {
     margin: 'auto',
@@ -8,11 +7,11 @@ const Styles = StyleSheet.create({
     height: '45%',
     alignItems: 'center',
   },
-
   image: {
     width: '100%',
     height: '100%',
     alignItems: 'center',
+    zIndex: -1,
     // justifyContent: 'column',
   },
   iconBox: {
@@ -26,29 +25,29 @@ const Styles = StyleSheet.create({
     paddingTop: 10,
     width: 40,
     height: 40,
-    borderRadius:5,
-    backgroundColor:'#fff',
+    borderRadius: 5,
+    backgroundColor: '#fff',
 
   },
   iconOne: {
     margin: 'auto',
-    marginTop:64,
+    marginTop: 64,
     marginBottom: 2,
     width: '100%',
     alignItems: 'center',
-    paddingLeft:19,
-    paddingRight:19,
+    paddingLeft: 19,
+    paddingRight: 19,
     // width:336,
-    height:40,
+    height: 40,
     flexDirection: 'row',
-    justifyContent:'space-between',
+    justifyContent: 'space-between',
   },
   iconTwo: {
     margin: 'auto',
     marginTop: 2,
     paddingTop: 7,
-    paddingLeft:19,
-    paddingRight:19,
+    paddingLeft: 19,
+    paddingRight: 19,
     width: '100%',
     height: 40,
     flexDirection: 'row-reverse',
@@ -67,22 +66,22 @@ const Styles = StyleSheet.create({
     height: 55,
     marginTop: -30,
     flexDirection: 'row',
-    justifyContent:'space-between',
+    justifyContent: 'space-between',
     backgroundColor: '#fff',
   },
   smileEmj: {
     width: 76,
     height: 76,
     marginTop: -30,
-    marginLeft:19,
+    marginLeft: 19,
     borderRadius: 38,
     backgroundColor: '#fff',
   },
   smileIcon: {
     // width: 42,
     // height: 43,
-    marginTop:14,
-    marginLeft:17,
+    marginTop: 14,
+    marginLeft: 17,
   },
   cateIconBox: {
     marginRight: 19,
@@ -95,14 +94,14 @@ const Styles = StyleSheet.create({
     marginLeft: 181,
     paddingTop: 3,
     flexDirection: 'row',
-    justifyContent:'space-around',
+    justifyContent: 'space-around',
     width: 80,
     height: 25,
     backgroundColor: '#FFA92C',
     borderRadius: 5,
   },
   wordSnack: {
-    paddingRight:3,
+    paddingRight: 3,
     fontSize: 14,
     color: '#FFF'
   },
@@ -125,7 +124,7 @@ const Styles = StyleSheet.create({
     width: 336,
     height: 45,
     flexDirection: 'row',
-    justifyContent:'space-between',
+    justifyContent: 'space-between',
   },
   wordDetails: {
     fontSize: 14,
@@ -177,14 +176,12 @@ const Styles = StyleSheet.create({
     paddingLeft: 17,
     paddingTop: 3,
     color: '#fff'
-
   },
   detailRowOne: {
     marginRight: 19,
     width: 304,
     height: 25,
     flexDirection: 'row',
-    // backgroundColor: '#ccc'
   },
   choice: {
     marginLeft: 5,
@@ -192,7 +189,7 @@ const Styles = StyleSheet.create({
     width: 140,
     height: 25,
     flexDirection: 'row',
-    justifyContent:'space-between',
+    justifyContent: 'space-between',
     // backgroundColor: 'pink'
   },
   space: {
@@ -200,7 +197,7 @@ const Styles = StyleSheet.create({
   },
   bottom: {
     position: 'absolute',
-    margin:'auto',
+    margin: 'auto',
     bottom: 0,
     alignItems: 'center',
     width: '100%',
@@ -208,6 +205,6 @@ const Styles = StyleSheet.create({
     borderTopLeftRadius: 7,
     borderTopRightRadius: 7,
     backgroundColor: '#FFA92C',
-  }
+  },
 })
 export default Styles;

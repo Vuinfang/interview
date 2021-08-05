@@ -35,7 +35,6 @@ const Styles = StyleSheet.create({
     fontFamily: 'Montserrat',
     fontSize: 18,
     color: '#FFA92C'
-
   },
   arrow: {
     paddingLeft:11,

@@ -1,23 +1,24 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
+import {AntDesign} from '@expo/vector-icons';
 import Scan from '../svg/Scan';
 
-const Tab = ({ color, tab, onPress, icon }) => {
+const Tab = ({color, tab, onPress, icon}) => {
   if (icon !== 'scan') {
     let finalStyle = color === '#FFA92C' ? [styles.container, styles.selectedStyle] : [styles.container]
-    return(
+    return (
       <TouchableOpacity style={finalStyle} onPress={onPress}>
-        {icon && <AntDesign name={icon} size={25} color={color} />}
+        {icon && <AntDesign name={icon} size={25} color={color}/>}
       </TouchableOpacity>
-    )} else {
+    )
+  } else {
     return (
       <TouchableOpacity style={styles.containerMid} onPress={onPress}>
         <View style={styles.scanStyle}>
           {icon && <Scan/>}
         </View>
       </TouchableOpacity>
-      )
+    )
   }
 };
 
@@ -54,11 +55,11 @@ const styles = StyleSheet.create({
     width: 70,
     height: 70,
     backgroundColor: '#fff',
-    // shadowOffset: {width: 0, height:-5},
-    // shadowRadius: 12,
+    shadowOffset: {width: 0, height:-5},
+    shadowRadius: 120,
     shadowOpacity: 1,
-    // shadowColor: '#0000001A',
-    boxShadow: '0 -4px 4px 0 #0000001A',
+    shadowColor: '#0000001A',
+    // boxShadow: '0 -4px 4px 0 #0000001A',
     // WebkitBoxShadow: '4px 0 1px 4px #0000001A',
   }
 });

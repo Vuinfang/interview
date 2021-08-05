@@ -3,8 +3,8 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import Button from '../../component/Button';
 import Styles from './Styles';
 import Back from '../../svg/Back';
-import Scan from '../../svg/Scan';
-const Flag = ({ navigation}) => {
+
+const Flag = ({navigation}) => {
   return (
     <View style={{
       flex: 1,
@@ -17,7 +17,7 @@ const Flag = ({ navigation}) => {
             onPress={() => navigation.navigate('Product')}
           >
             <View style={Styles.backButton}>
-              <Back />
+              <Back/>
             </View>
           </TouchableOpacity>
           <Text style={Styles.title}>
@@ -56,11 +56,10 @@ const Flag = ({ navigation}) => {
         <View style={Styles.bottom}>
           <Button
             title={'Flag'}
-            onPress={() => navigation.navigate('Product', { success: true })}
+            onPress={() => navigation.navigate('Product', {success: true})}
           />
         </View>
       </View>
-
     </View>
   );
 }

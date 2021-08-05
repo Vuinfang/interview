@@ -1,5 +1,5 @@
-import React from 'react';
-import {Text, View, ImageBackground, TouchableOpacity} from 'react-native';
+import React, {useEffect} from 'react';
+import {Text, View, ImageBackground, TouchableOpacity, Animated, Dimensions} from 'react-native';
 import chewy from '../../assets/chewy.png'
 import Styles from './Styles';
 import Button from '../../component/Button'
@@ -13,42 +13,71 @@ import Panda from '../../svg/Panda';
 import CheckBox from '../../svg/CheckBox';
 import RightArrow from '../../svg/RightArrow';
 
-const Product = ({ route, navigation}) => {
+const Product = ({route, navigation}) => {
+  const width = Dimensions.get('window').width;
+  let flag = false;
   if (route.params) {
-    const { success } = route.params;
+    flag = route.params.success;
   }
+  const initHeight = new Animated.Value(-45)
+  useEffect(() => {
+    if (flag) {
+      Animated.timing(initHeight, {
+        toValue: 46,
+        duration: 1000,
+      }).start();
+      setTimeout(() =>
+          Animated.timing(initHeight, {
+            toValue: -46,
+            duration: 1000,
+          }).start()
+        , 2000);
+    }
+  });
   return (
     <View style={{
       flex: 1,
       flexDirection: 'column',
       backgroundColor: '#fff',
       alignItems: 'center',
-      height:'100%',
+      height: '100%',
       width: '100%'
     }}>
-      <View>
-        <Text style={{
-          position: 'absolute',
-          top: 46,
-          left: 0,
-          // marginTop: 46,
-          width: 350,
-          height: 45,
-          backgroundColor: '#A4DB2C',
-          borderRadius: 3,
-          zIndex: 999,
-        }}>
-          Flagged Item Successfully
-        </Text>
-      </View>
+      <Animated.View style={{
+        flexDirection:'row',
+        alignItems: 'center',
+        position: 'absolute',
+        top: initHeight,
+        right: (width - 350) / 2,
+        // marginTop: 46,
+        width: 350,
+        height: 45,
+        backgroundColor: '#A4DB2C',
+        borderRadius: 10,
+        zIndex: 999,
+      }}><Text style={{
+        marginLeft: 60,
+        lineHeight: 40,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 18,
+        color: '#fff',
+        borderRadius: 15,
+      }}>
+        Flagged Item Successfully
+      </Text>
+        <CheckBox />
+      </Animated.View>
+
       <View style={{
         flex: 1,
         flexDirection: 'column',
         backgroundColor: '#fff',
         alignItems: 'center',
-          height:'100%',
-          width: '100%'
-        }}>
+        height: '100%',
+        width: '100%',
+        zIndex: -1
+      }}>
         <View style={Styles.boxOne}>
           <ImageBackground
             source={chewy}
@@ -56,14 +85,14 @@ const Product = ({ route, navigation}) => {
             resizeMode={'stretch'}
           >
             <View style={Styles.iconOne}>
-             <TouchableOpacity
-               style={Styles.iconBox}
-               onPress={() => navigation.navigate('Home')}>
-               <Back/>
-             </TouchableOpacity>
-             <View style={Styles.iconBoxTwo}>
-               <Share/>
-             </View>
+              <TouchableOpacity
+                style={Styles.iconBox}
+                onPress={() => navigation.navigate('Home')}>
+                <Back/>
+              </TouchableOpacity>
+              <View style={Styles.iconBoxTwo}>
+                <Share/>
+              </View>
             </View>
             <View style={Styles.iconTwo}>
               <TouchableOpacity
@@ -175,7 +204,6 @@ const Product = ({ route, navigation}) => {
               </View>
             </View>
           </View>
-
         </View>
         <View style={Styles.bottom}>
           <Button title={'Save Item'}/>
